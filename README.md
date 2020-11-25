@@ -7,7 +7,9 @@ The paper explores linguistic features that foretell the impending betrayal in a
 3. Research Questions
 
 Q1. Do more balanced out friendships have different outcomes than more unidirectional ones in terms of the amount of help the two individuals provide each other?
+
 Q2. Does taking into account the irregularity of the features (variance) provide additional information that can improve the perfomance of the predictor?
+
 Q3. Can a non-linear model improve the predictive power of the linear model based on (mostly) the same features?
 
 4. Proposed dataset
