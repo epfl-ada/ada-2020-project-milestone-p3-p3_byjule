@@ -33,6 +33,7 @@ def load_season_features(source, last_friendly_action, player_type):
     # Remove all messages that occurs after the last friendly action
     messages = messages[messages['seasons.season'] <= messages['last_season']]
     messages = messages.rename(columns={'seasons.season' : 'season', 'lexicon_words.disc_temporal_rest' : 'temporal', 'lexicon_words.allsubj' : 'subjectivity', 'lexicon_words.disc_expansion' : 'expansion', 'lexicon_words.disc_contingency' : 'contingency', 'lexicon_words.premise' : 'premise', 'lexicon_words.disc_temporal_future' : 'planning', 'lexicon_words.disc_comparison' : 'comparison', 'lexicon_words.claim' : 'claim'})
+    
     messages['support'] = messages['seasons.interaction'].apply(lambda x: 1 if x[player_type] == 'support' else 0)
     messages = messages.drop(columns=['frequent_words', 'seasons.interaction'])
     
