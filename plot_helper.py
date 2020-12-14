@@ -83,8 +83,8 @@ def corr_plot(corr):
     ax.set_xticklabels(corr.columns, fontsize=8)
     ax.set_yticklabels(corr.columns, fontsize=8)
 
-def feature_type_corr_plot(betrayal_corr):
+def betrayal_corr_plot(betrayal_corr, y_col, y_name):
     fig, ax = plt.subplots(1, 1, figsize=(10,8))
 
-    sns.violinplot(ax=ax, data=betrayal_corr, y='feature_type', x='betrayal_correlation', inner="box", color="#999999", cut=0, width=1, linewidth=3)
-    ax.set(xlabel='Betrayal correlation', ylabel='Feature type')
+    sns.violinplot(ax=ax, data=betrayal_corr, y=y_col, x='betrayal_correlation', inner="box", color="#999999", cut=0, width=1, linewidth=3)
+    ax.set(xlabel='Betrayal correlation', ylabel=y_name)

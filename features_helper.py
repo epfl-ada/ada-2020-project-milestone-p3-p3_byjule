@@ -59,7 +59,7 @@ def get_friendship_features(season_features):
     mean_features = season_features.groupby(static_cols, as_index=False).mean().drop(columns=['season', 'last_season'])
     mean_features.columns = ['mean_' + str(col) if col not in static_cols else str(col) for col in mean_features.columns]
     
-    var_features = season_features.groupby(static_cols, as_index=False).var().drop(columns=['season', 'last_season'])
+    var_features = season_features.groupby(static_cols, as_index=False).var(ddof=0).drop(columns=['season', 'last_season'])
     var_features.columns = ['var_' + str(col) if col not in static_cols else str(col) for col in var_features.columns]
         
     result = pd.merge(mean_features, var_features, on = static_cols)
