@@ -39,8 +39,11 @@ We see ourselves implementing our creative extension in 3 steps, each taking abo
 - step 3: Implement the machine learning models for predicting how a given relationship will end.
 
 7. Organization within the team
+We discussed the initial ideas and all the intermediary results together, further we tried to work on the project all together as much as possible.
 
-We will work on part A of the milestone together as a team.
+- Alice: Writing sections of the report, the readme and preparing final presentation.
+- Claire: Writing sections of the report. Writing the documentation of the code and the textual descriptions guiding through the process.
+- Quentin: Writing sections of the report. Implementing the machine learning models.
 
 8. Questions for TAs (optional)
 
