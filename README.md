@@ -44,7 +44,7 @@ We discussed the initial ideas and all the intermediary results together, furthe
 
 - Alice: Writing sections of the report, the readme and preparing final presentation.
 - Claire: Writing sections of the report. Writing the documentation of the code and the textual descriptions guiding through the process.
-- Quentin: Writing sections of the report. Implementing the machine learning models.
+- Quentin: Writing sections of the report. Feature processing and analysis. Implementing the machine learning models.
 
 8. Questions for TAs (optional)
 
